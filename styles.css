@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  padding: 20px 0;
+}
+
+/* Link voltar (para segunda página) */
+a[href="index.html"] {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+  color: #0078d7;
+  font-weight: bold;
+}
+
+a[href="index.html"]:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+
+main {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  max-width: 90%;
+  text-align: left;
+}
+
+/* ============================= */
+/* Formulário Login - primeira página */
+/* ============================= */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-login .campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-login label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-login input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form-login input:focus {
+  border-color: #0078d7;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+.form-login .botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form-login .botoes button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.form-login .botoes button[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.form-login .botoes button[type="reset"]:hover {
+  background-color: #b3b3b3;
+}
+
+.form-login .botoes button[type="submit"] {
+  background-color: #0078d7;
+  color: white;
+}
+
+.form-login .botoes button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+.form-login p.link-redefinir {
+  margin-top: 15px;
+}
+
+.form-login p.link-redefinir a {
+  text-decoration: none;
+  color: #0078d7;
+  font-weight: 500;
+}
+
+.form-login p.link-redefinir a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* Formulário Produto - segunda página */
+/* ============================= */
+
+
+.form-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-produto .campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-produto label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-produto input,
+.form-produto select,
+.form-produto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form-produto input:focus,
+.form-produto select:focus,
+.form-produto textarea:focus {
+  border-color: #0078d7;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+.form-produto textarea {
+  resize: vertical;
+}
+
+.form-produto .botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form-produto .botoes button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.form-produto .botoes button[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.form-produto .botoes button[type="reset"]:hover {
+  background-color: #b3b3b3;
+}
+
+.form-produto .botoes button[type="submit"] {
+  background-color: #0078d7;
+  color: white;
+}
+
+.form-produto .botoes button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
