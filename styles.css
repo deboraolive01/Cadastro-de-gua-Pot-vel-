@@ -213,3 +213,7 @@ main {
   background-color: #005fa3;
 }
 
+input:invalid {
+  border-color: red;
+  background-color: #ffe6e6;
+}

@@ -14,79 +14,82 @@
 
     <main>
         <form class="form-produto">
-            <div class="campo">
-                <label for="nome-produto">Nome do Produto:</label>
-                <input type="text" id="nome-produto" name="nome-produto" value="Água Potável" required>
-            </div>
+    <h1>Cadastro de Produto</h1>
 
+    <div class="campo">
+      <label for="nome-produto">Nome do Produto:</label>
+      <input type="text" id="nome-produto" name="nome-produto" value="Água Potável" required>
+    </div>
 
-            <div class="campo">
-                <label for="categoria">Categoria:</label>
-                <select id="categoria" name="categoria" required>
-                    <option value="">Selecione</option>
-                    <option value="bebida">Bebida</option>
-                    <option value="mineral">Água Mineral</option>
-                    <option value="purificada">Água Purificada</option>
-                    <option value="potavel">Água Potável</option>
-                </select>
-            </div>
+    <div class="campo">
+      <label for="categoria">Categoria:</label>
+      <select id="categoria" name="categoria" required>
+        <option value="">Selecione</option>
+        <option value="bebida">Bebida</option>
+        <option value="mineral">Água Mineral</option>
+        <option value="purificada">Água Purificada</option>
+        <option value="potavel">Água Potável</option>
+      </select>
+    </div>
 
-            <div class="campo">
-                <label for="marca">Marca:</label>
-                <input type="text" id="marca" name="marca" value="Fonte Viva">
-            </div>
+    <div class="campo">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" value="Fonte Viva">
+    </div>
 
-            <div class="campo">
-                <label for="volume">Volume / Capacidade:</label>
-                <input type="text" id="volume" name="volume" placeholder="Ex.: 20L, 500ml" required>
-            </div>
+    <div class="campo">
+      <label for="volume">Volume / Capacidade:</label>
+      <input type="text" id="volume" name="volume" placeholder="Ex.: 20L, 500ml" required>
+    </div>
 
-            <div class="campo">
-                <label for="quantidade">Quantidade em Estoque:</label>
-                <input type="number" id="quantidade" name="quantidade" required>
-            </div>
+    <div class="campo">
+      <label for="quantidade">Quantidade em Estoque:</label>
+      <input type="number" id="quantidade" name="quantidade" required>
+    </div>
 
-            <div class="campo">
-                <label for="unidade">Unidade de Medida:</label>
-                <select id="unidade" name="unidade" required>
-                    <option value="">Selecione</option>
-                    <option value="litros">Litros</option>
-                    <option value="garrafao">Garrafão</option>
-                    <option value="garrafa">Garrafa</option>
-                </select>
-            </div>
+    <div class="campo">
+      <label for="unidade">Unidade de Medida:</label>
+      <select id="unidade" name="unidade" required>
+        <option value="">Selecione</option>
+        <option value="litros">Litros</option>
+        <option value="garrafao">Garrafão</option>
+        <option value="garrafa">Garrafa</option>
+      </select>
+    </div>
 
-            <div class="campo">
-                <label for="preco">Preço (R$):</label>
-                <input type="number" step="0.01" id="preco" name="preco" required>
-            </div>
+    <div class="campo">
+      <label for="preco">Preço (R$):</label>
+      <input type="number" step="0.01" id="preco" name="preco" required>
+    </div>
 
-            <div class="campo">
-                <label for="promocional">Preço Promocional (opcional):</label>
-                <input type="number" step="0.01" id="promocional" name="promocional">
-            </div>
+    <div class="campo">
+      <label for="promocional">Preço Promocional (opcional):</label>
+      <input type="number" step="0.01" id="promocional" name="promocional">
+    </div>
 
-            <div class="campo">
-                <label for="codigo">Código do Produto (opcional):</label>
-                <input type="text" id="codigo" name="codigo">
-            </div>
+    <div class="campo">
+      <label for="codigo">Código do Produto (opcional):</label>
+      <input type="text" id="codigo" name="codigo">
+    </div>
 
-            <div class="campo">
-                <label for="descricao">Descrição do Produto:</label>
-                <textarea id="descricao" name="descricao" rows="4" placeholder="Ex.: Água potável mineral, 20L garrafão"></textarea>
-            </div>
+    <div class="campo">
+      <label for="descricao">Descrição do Produto:</label>
+      <textarea id="descricao" name="descricao" rows="4" placeholder="Ex.: Água potável mineral, 20L garrafão"></textarea>
+    </div>
 
-            <div class="campo">
-                <label for="observacoes">Observações Adicionais:</label>
-                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Digite aqui..."></textarea>
-            </div>
+    <div class="campo">
+      <label for="observacoes">Observações Adicionais:</label>
+      <textarea id="observacoes" name="observacoes" rows="4" placeholder="Digite aqui..."></textarea>
+    </div>
 
-            <div class="botoes">
-                <button type="reset">Cancelar</button>
-                <button type="submit">Cadastrar Produto</button>
-            </div>
-    </form>
+    <div class="botoes">
+      <button type="reset">Cancelar</button>
+      <button id="botaoVoltar" type="button">Voltar</button>
+      <button id="botaoCadastrar" type="button">Cadastrar Produto</button>
+    </div>
+  </form>
+
   </main>
-
+<script src="script.js"></script>
 </body>
 </html>
